@@ -1,0 +1,114 @@
+[
+  {
+    "name": "象山北路",
+    "tel": "无",
+    "address":"无",
+    "openTime": "无",
+    "latitude":115.897093,
+    "longitude":28.688794,
+    "special":"无",
+    "remark":"无"
+  },
+  {
+    "name": "明德路",
+    "tel": "无",
+    "address":"无",
+    "openTime": "无",
+    "latitude":115.892359,
+    "longitude":28.683147,
+    "special":"无",
+    "remark":"无"
+  },
+  {
+    "name": "街角的房间",
+    "tel": "13870873187",
+    "address":"南昌市东湖区民德路与象山北路交叉口西北50米",
+    "openTime": "无",
+    "latitude":115.897567,
+    "longitude":28.683763,
+    "special":"无",
+    "remark":"无"
+  },
+  {
+    "name": "鹿岛生活馆",
+    "tel": "",
+    "address":"南昌市东湖区云锦路西湖万达广场一楼星巴克对面",
+    "openTime": "无",
+    "latitude":115.864947,
+    "longitude":28.639005,
+    "special":"无",
+    "remark":"无"
+  },
+  {
+    "name": "哈姆西克比萨(盈石店)",
+    "tel": "13699509072",
+    "address":"南昌市西湖区丁公路盈石广场1号楼1122",
+    "openTime": "无",
+    "latitude":115.917965,
+    "longitude":28.676741,
+    "special":"无",
+    "remark":"无"
+  },
+  {
+    "name": "金童女人街",
+    "tel": "无",
+    "address":"南昌市西湖区中山路金童商厦1楼(八一起义纪念馆对面)",
+    "openTime": "无",
+    "latitude":115.895635,
+    "longitude":28.681426,
+    "special":"美食、饰品",
+    "remark":"无"
+  },
+  {
+    "name": "纪念日百货(江西南昌一店)",
+    "tel": "(0791)86777375",
+    "address":"南昌市东湖区胜利路步行街1号(万寿宫对面)",
+    "openTime": "无",
+    "latitude":115.895172,
+    "longitude":28.681522,
+    "special":"无",
+    "remark":"无"
+  },
+  {
+    "name": "万寿宫(商区)",
+    "tel": "无",
+    "address":"南昌市西湖区",
+    "openTime": "无",
+    "latitude":115.917965,
+    "longitude":28.676741,
+    "special":"无",
+    "remark":"物品多比价格，东西比较杂、乱，对半砍价或者一成砍价"
+  },
+  {
+    "name": "三福时尚(步行街店)",
+    "tel": "无",
+    "address":"南昌市东湖区胜利路步行街12号(万寿宫旁)",
+    "openTime": "09:00-22:30",
+    "latitude":115.894221,
+    "longitude":28.685964,
+    "special":"无",
+    "remark":"巨大的实体化淘宝，东西也很便宜"
+  },
+  {
+    "name": "三福(日用百货)",
+    "tel": "无",
+    "address":"南昌市东湖区孺子路1号丽华购物广场2层",
+    "openTime": "无",
+    "latitude":115.909353,
+    "longitude":28.678923,
+    "special":"无",
+    "remark":"巨大的实体化淘宝，东西也很便宜"
+  },
+  {
+    "name": "喜旧杂货铺",
+    "tel": "无",
+    "address":"南昌市青山湖区青山湖大道106号8090梦工厂四号楼",
+    "openTime": "09:00-21:00",
+    "latitude":115.954269,
+    "longitude":28.685306,
+    "special":"复古、适合拍照、咖啡",
+    "remark":"一楼是咖啡、二楼是杂物和书籍、巨大无比，像一个工厂"
+  }
+
+
+]

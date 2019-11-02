@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no"/>
+
+    <link rel="stylesheet" href="css/demo.css">
+    <script type="text/javascript"
+            src="http://api.map.baidu.com/api?v=3.0&ak=EHxgxGIev0aIE92MLqlQejQPYs5NNUEm"></script>
+    <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+<!--    <script type="text/javascript" src="js/jquery.mobile-1.4.5.min.css"></script>-->
+<!--    <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>-->
+    <title>百度地图</title>
+</head>
+<body>
+<div id="container"></div>
+</body>
+
+
+<script>
+
+    var map = new BMap.Map("container");
+    var point = new BMap.Point(115.943824, 28.68844);
+    //设置地图放大级别
+    map.centerAndZoom(point, 15);
+    //开启鼠标缩放
+    map.enableScrollWheelZoom(true);
+    //设置当前城市
+    map.setCurrentCity("南昌");
+    //显示地图缩放控件
+    map.addControl(new BMap.NavigationControl());
+    //显示比例尺
+    map.addControl(new BMap.ScaleControl());
+    //自定义地图样式
+    map.setMapStyleV2({
+        styleId: 'b19ca233dd8c060310c3e89dbcd7453a'
+    });
+
+
+    var marker = new BMap.Marker(point);        // 创建标注
+    map.addOverlay(marker);                     // 将标注添加到地图中
+    marker.addEventListener("click",function () {
+        var infoWindow = new BMap.InfoWindow("我的学校");  // 创建信息窗口对象
+        this.openInfoWindow(infoWindow);
+    })
+    map.addOverlay(marker);                     // 将标注添加到地图中
+
+    alert("地图初步渲染完成")
+    // function getData() {
+    $.getJSON("data/data.json", function (data) {
+        //存储数据的变量
+        alert("成功运行jquery")
+        $.each(data, function (infoIndex, info) {
+            var strHtml = "";
+            strHtml += "地名：" + info["name"] + "<br/>";
+            strHtml += "电话：" + info["tel"] + "<br/>";
+            strHtml += "地址：" + info["address"] + "<br/>";
+            strHtml += "营业时间：" + info["openTime"] + "<br/>";
+            strHtml += "特点：" + info["special"] + "<br/>";
+            strHtml += "评论：" + info["remark"] + "<br/>";
+            var pointtemp = new BMap.Point(info["latitude"], info["longitude"]);
+            var markertemp = new BMap.Marker(pointtemp);        // 创建标注
+            markertemp.addEventListener("click",function () {
+                var infoWindow = new BMap.InfoWindow(strHtml);  // 创建信息窗口对象
+                this.openInfoWindow(infoWindow);
+            })
+            map.addOverlay(markertemp);                     // 将标注添加到地图中
+        })
+
+        alert("结束")
+    })
+    // }
+</script>
+</html>
